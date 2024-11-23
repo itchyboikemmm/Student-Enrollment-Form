@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Just to ensure the table is visible */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Style for the form to ensure it doesn't overlap */
+        .content {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="content">
+            <h1>Student Enrollment Form</h1>
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Fill in the form fields.</li>
+                <li>Check your interests.</li>
+                <li>Click "Enroll Now" to submit.</li>
+            </ol>
+            <form action="#" method="post">
+                <div>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="1" required>
+                </div>
+                <div>
+                    <label>Sex:</label>
+                    <input type="radio" id="male" name="sex" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="sex" value="Female">
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                    <label for="course">Course:</label>
+                    <select id="course" name="course" required>
+                        <option value="BSIT">BSIT</option>
+                        <option value="BSSW">BSSW</option>
+                        <option value="BSPA">BSPA</option>
+                        <option value="BSA">BSA</option>
+                        <option value="BSAIS">BSAIS</option>
+                        <option value="BTVTED">BTVTED</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Interests:</label>
+                    <div class="checkbox-group">
+                    <input type="checkbox" id="web-dev" name="interests" value="Web Development">
+                    <label for="web-dev">Web Development</label>
+
+                    <input type="checkbox" id="data-science" name="interests" value="Data Science">
+                    <label for="data-science">Data Science</label>
+
+                    <input type="checkbox" id="networking" name="interests" value="Networking">
+                    <label for="networking">Networking</label>
+
+                    <input type="checkbox" id="graphic-design" name="interests" value="Graphic Design">
+                    <label for="graphic-design">Graphic Design</label>
+                    </div>
+                </div>
+                <button type="submit">Enroll Now</button>
+            </form>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Course</th>
+                <th>Interests</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Static rows to ensure the table shows something -->
+            <tr>
+                <td>1</td>
+                <td>Kim Andrei Lugatoc</td>
+                <td>lugatockim@example.com</td>
+                <td>20</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Web Development, Graphic Design</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bini Colet</td>
+                <td>bini_colet@example.com</td>
+                <td>23</td>
+                <td>Female</td>
+                <td>ABELS</td>
+                <td>Networking, Graphic Design</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Bini Gwen</td>
+                <td>bini_gwen@example.com</td>
+                <td>23</td>
+                <td>Female</td>
+                <td>BSA</td>
+                <td>Graphic Design</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bini Stacey</td>
+                <td>bini_stacey@example.com</td>
+                <td>23</td>
+                <td>Female</td>
+                <td>BSE</td>
+                <td>Networking, Graphic Design, Data Science</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Django Balagwit</td>
+                <td>django044@example.com</td>
+                <td>30</td>
+                <td>Male</td>
+                <td>BSSW</td>
+                <td>Graphic Design</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Fransisco Banta</td>
+                <td>cisco_banta@example.com</td>
+                <td>18</td>
+                <td>Male</td>
+                <td>DHRS</td>
+                <td>Data Science</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Mark Zuckerburg</td>
+                <td>titomark@yahoo.com</td>
+                <td>40</td>
+                <td>Male</td>
+                <td>BSIT</td>
+                <td>Web Development, Data Science</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Mario Cardenas</td>
+                <td>cardenas_mario002@yahoo.com</td>
+                <td>30</td>
+                <td>Male</td>
+                <td>BTVTED</td>
+                <td>Graphic Design</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Mario Cardenas</td>
+                <td>cardenas_mario002@yahoo.com</td>
+                <td>30</td>
+                <td>Male</td>
+                <td>BTVTED</td>
+                <td>Graphic Design</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
